@@ -1,0 +1,61 @@
+{
+  "name": "ui2-sdk",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "vite build && tsc -p tsconfig.build.json",
+    "build:package": "npm run build && node scripts/sync-package.mjs",
+    "check:package": "node scripts/check-package.mjs",
+    "clean": "rm -rf dist",
+    "clean:package": "rm -rf package/dist",
+    "release:local": "npm test && npm run build:package && npm run check:package",
+    "pack:package": "npm run build:package && (cd package && npm pack)",
+    "storybook": "storybook dev -p 6006",
+    "storybook:build": "storybook build",
+    "test": "vitest run"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "dependencies": {
+    "@tabler/icons-react": "^3.36.1",
+    "clsx": "^2.1.1"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^8.6.4",
+    "@storybook/addon-interactions": "^8.6.4",
+    "@storybook/addon-links": "^8.6.4",
+    "@storybook/react": "^8.6.4",
+    "@storybook/react-vite": "^8.6.4",
+    "@storybook/test": "^8.6.4",
+    "@testing-library/jest-dom": "^6.6.0",
+    "@testing-library/react": "^16.0.0",
+    "@types/react": "^18.3.23",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^4.3.2",
+    "jsdom": "^24.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.8.3",
+    "vite": "^5.4.19",
+    "vitest": "^3.2.4"
+  }
+}

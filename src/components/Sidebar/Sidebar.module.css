@@ -1,0 +1,527 @@
+.root {
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  background: var(--ui2-background-tone-5);
+  overflow: hidden;
+}
+
+.collapsed {
+  width: 60px;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  padding: 8px 8px 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: var(--ui2-shade-white-4);
+  backdrop-filter: blur(15px);
+}
+
+.accountButton {
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  background: none;
+  text-align: left;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.accountButton:hover {
+  background: var(--ui2-state-hover-lvl-1);
+}
+
+.accountInfo {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.accountAvatar {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  color: var(--ui2-background-primary-inverse);
+  font-family: var(--ui2-textstyle-data-s-semibold-font-family);
+  font-size: var(--ui2-textstyle-data-s-semibold-font-size);
+  font-style: normal;
+  font-weight: var(--ui2-textstyle-data-s-semibold-font-weight);
+  letter-spacing: var(--ui2-textstyle-data-s-semibold-letter-spacing);
+  line-height: var(--ui2-textstyle-data-s-semibold-line-height);
+  text-transform: var(--ui2-textstyle-data-s-semibold-text-transform);
+  border: 1px solid var(--ui2-stroke-secondary);
+  background: var(--ui2-background-tone-5);
+  flex: none;
+}
+
+.accountName,
+.accountUsername {
+  font-style: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.accountName {
+  color: var(--ui2-background-primary-inverse);
+  font-family: var(--ui2-textstyle-data-s-semibold-font-family);
+  font-size: var(--ui2-textstyle-data-s-semibold-font-size);
+  font-weight: var(--ui2-textstyle-data-s-semibold-font-weight);
+  letter-spacing: var(--ui2-textstyle-data-s-semibold-letter-spacing);
+  line-height: var(--ui2-textstyle-data-s-semibold-line-height);
+  text-transform: var(--ui2-textstyle-data-s-semibold-text-transform);
+  margin-bottom: 2px;
+}
+
+.accountUsername {
+  color: var(--ui2-content-tertiary);
+  font-family: var(--ui2-textstyle-data-xs-regular-font-family);
+  font-size: var(--ui2-textstyle-data-xs-regular-font-size);
+  font-weight: var(--ui2-textstyle-data-xs-regular-font-weight);
+  letter-spacing: var(--ui2-textstyle-data-xs-regular-letter-spacing);
+  line-height: var(--ui2-textstyle-data-xs-regular-line-height);
+  text-transform: var(--ui2-textstyle-data-xs-regular-text-transform);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.buttonsCollapsed {
+  grid-template-columns: 1fr;
+}
+
+.headerButton {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: var(--ui2-sidebar-pinned-icon-color, var(--ui2-content-primary));
+  box-sizing: border-box;
+  background: var(--ui2-state-hover-lvl-1);
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+
+.headerButton:focus-visible {
+  outline: 1px solid var(--ui2-state-focus);
+  outline-offset: -1px;
+}
+
+.headerButton:hover {
+  background: var(--ui2-state-hover-lvl-2);
+}
+
+.headerButton > svg,
+.headerButton > img {
+  width: 18px;
+  height: 18px;
+  color: currentColor;
+  display: block;
+}
+
+.headerButtonDisabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.headerButtonActive {
+  background: var(--ui2-state-hover-lvl-2);
+}
+
+.collapsed .headerButton {
+  height: 44px;
+  background: none;
+}
+
+.collapsed .headerButton:hover {
+  background: var(--ui2-state-hover-lvl-1);
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 4px;
+  padding: 12px 8px 16px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  will-change: scroll-position;
+  scroll-behavior: smooth;
+  overscroll-behavior: contain;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.nav::-webkit-scrollbar {
+  display: none;
+}
+
+.navItemBottom {
+  display: flex;
+  flex: 1;
+  flex-direction: column-reverse;
+  margin-top: auto;
+}
+
+.navBottom {
+  padding: 12px 8px;
+}
+
+.menuItem {
+  width: 100%;
+}
+
+.menuButton {
+  appearance: none;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background: transparent;
+  user-select: none;
+  overflow: hidden;
+  font-family: var(--ui2-textstyle-data-s-medium-font-family);
+  padding: 0;
+  text-decoration: none;
+  touch-action: manipulation;
+  margin: 0;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  height: 40px;
+  width: 100%;
+  padding: 8px 12px 8px 8px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  overflow: hidden;
+  color: var(--ui2-content-primary);
+  font-size: var(--ui2-textstyle-data-s-medium-font-size);
+  font-style: normal;
+  font-weight: var(--ui2-textstyle-data-s-medium-font-weight);
+  letter-spacing: var(--ui2-textstyle-data-s-medium-letter-spacing);
+  line-height: var(--ui2-textstyle-data-s-medium-line-height);
+  text-transform: var(--ui2-textstyle-data-s-medium-text-transform);
+  text-align: left;
+  border-radius: 10px;
+}
+
+.menuButton:focus-visible {
+  outline: 1px solid var(--ui2-state-focus);
+  outline-offset: -1px;
+}
+
+.menuButton:hover,
+.menuButtonPseudoHover {
+  background-color: var(--ui2-state-hover-lvl-1);
+}
+
+.menuButtonActive {
+  background-color: var(--ui2-state-hover-lvl-2);
+}
+
+.menuButtonExpanded {
+  background-color: var(--ui2-state-hover-lvl-1);
+}
+
+.menuButtonDisabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.menuButtonDisabled:hover {
+  background-color: transparent;
+}
+
+.menuButtonText {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.menuButtonIcon {
+  width: 24px;
+  height: 24px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  color: var(--ui2-content-tertiary);
+}
+
+.menuButtonIcon > svg,
+.menuButtonIcon > img {
+  width: 100%;
+  height: 100%;
+  color: currentColor;
+}
+
+.menuButtonChevron {
+  font-size: var(--ui2-textstyle-data-xs-regular-font-size);
+  letter-spacing: var(--ui2-textstyle-data-xs-regular-letter-spacing);
+  line-height: var(--ui2-textstyle-data-xs-regular-line-height);
+  color: var(--ui2-content-tertiary);
+  display: flex;
+  align-items: center;
+}
+
+.menuButtonCompact {
+  height: 44px;
+  justify-content: center;
+  padding: 0;
+}
+
+.children {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-bottom: 12px;
+}
+
+.child {
+  box-sizing: border-box;
+  appearance: none;
+  border: none;
+  background: transparent;
+  text-align: left;
+  font-family: var(--ui2-textstyle-data-xs-regular-font-family);
+  cursor: pointer;
+  outline: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  overflow: hidden;
+  color: var(--ui2-content-primary);
+  font-size: var(--ui2-textstyle-data-xs-regular-font-size);
+  font-style: normal;
+  font-weight: var(--ui2-textstyle-data-xs-regular-font-weight);
+  letter-spacing: var(--ui2-textstyle-data-xs-regular-letter-spacing);
+  line-height: var(--ui2-textstyle-data-xs-regular-line-height);
+  text-transform: var(--ui2-textstyle-data-xs-regular-text-transform);
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  height: 32px;
+  align-items: center;
+}
+
+.child:hover {
+  background: var(--ui2-state-hover-lvl-1);
+}
+
+.childActive {
+  background: var(--ui2-state-hover-lvl-2);
+}
+
+.childDisabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.childDisabled:hover {
+  background: transparent;
+}
+
+.childText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.childIcon {
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ui2-content-tertiary);
+}
+
+.popover {
+  width: 280px;
+  border-radius: 10px;
+  border: 1px solid var(--ui2-stroke-primary);
+  background: var(--ui2-background-primary);
+  padding: 8px;
+  z-index: 9999;
+}
+
+.popoverTitle {
+  color: var(--ui2-content-tertiary);
+  font-family: var(--ui2-textstyle-data-xs-medium-font-family);
+  font-size: var(--ui2-textstyle-data-xs-medium-font-size);
+  font-style: normal;
+  font-weight: var(--ui2-textstyle-data-xs-medium-font-weight);
+  letter-spacing: var(--ui2-textstyle-data-xs-medium-letter-spacing);
+  line-height: var(--ui2-textstyle-data-xs-medium-line-height);
+  text-transform: var(--ui2-textstyle-data-xs-medium-text-transform);
+  padding: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid var(--ui2-stroke-tertiary);
+}
+
+.buttonLink {
+  appearance: none;
+  border: none;
+  background: transparent;
+  text-align: left;
+  font-family: var(--ui2-textstyle-data-xs-medium-font-family);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px 8px 8px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--ui2-content-primary);
+  font-size: var(--ui2-textstyle-data-xs-medium-font-size);
+  font-weight: var(--ui2-textstyle-data-xs-medium-font-weight);
+  letter-spacing: var(--ui2-textstyle-data-xs-medium-letter-spacing);
+  line-height: var(--ui2-textstyle-data-xs-medium-line-height);
+  text-transform: var(--ui2-textstyle-data-xs-medium-text-transform);
+  height: 40px;
+  width: 100%;
+}
+
+.buttonLink:hover {
+  background: var(--ui2-state-hover-lvl-1);
+}
+
+.buttonIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.buttonIcon > svg,
+.buttonIcon > img {
+  width: 18px;
+  height: 18px;
+  color: var(--ui2-content-tertiary);
+}
+
+.buttonText {
+  color: var(--ui2-content-tertiary);
+  font-family: var(--ui2-textstyle-data-xs-regular-font-family);
+  font-size: var(--ui2-textstyle-data-xs-regular-font-size);
+  font-weight: var(--ui2-textstyle-data-xs-regular-font-weight);
+  letter-spacing: var(--ui2-textstyle-data-xs-regular-letter-spacing);
+  line-height: var(--ui2-textstyle-data-xs-regular-line-height);
+  text-transform: var(--ui2-textstyle-data-xs-regular-text-transform);
+}
+
+.footer {
+  padding: 18px 12px 16px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: sticky;
+  bottom: 0;
+  background: var(--ui2-shade-white-4);
+  backdrop-filter: blur(15px);
+}
+
+.footerExpanded {
+  border-top: 1px solid var(--ui2-shade-black-8);
+}
+
+.footerBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+}
+
+.footerLogo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.version {
+  color: var(--ui2-content-tertiary);
+  font-family: var(--ui2-textstyle-data-xs-regular-font-family);
+  font-size: var(--ui2-textstyle-data-xs-regular-font-size);
+  font-style: normal;
+  font-weight: var(--ui2-textstyle-data-xs-regular-font-weight);
+  letter-spacing: var(--ui2-textstyle-data-xs-regular-letter-spacing);
+  line-height: var(--ui2-textstyle-data-xs-regular-line-height);
+  text-transform: var(--ui2-textstyle-data-xs-regular-text-transform);
+}
+
+.footerCollapsed {
+  padding: 6px 8px 20px;
+}
+
+.footerCollapsed .footerBottom {
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerToggle {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--ui2-content-tertiary);
+}
+
+.footerToggle > svg {
+  color: currentColor;
+}
+
+.iconButton {
+  height: 28px;
+  width: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  border: none;
+  background: transparent;
+  color: var(--ui2-content-tertiary);
+  cursor: pointer;
+}
+
+.iconButton:hover {
+  background: var(--ui2-state-hover-lvl-1);
+}
+
+.iconButton > svg {
+  color: currentColor;
+}
+
+.pinnedButtonWrap {
+  width: 100%;
+  display: flex;
+}
+
+.tooltipHost {
+  display: block;
+  width: 100%;
+}

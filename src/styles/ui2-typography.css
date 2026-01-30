@@ -1,0 +1,227 @@
+:root {
+  --ui2-textstyle-header-h1-font-family: "Poppins", sans-serif;
+  --ui2-textstyle-header-h1-font-weight: 700;
+  --ui2-textstyle-header-h1-font-size: 38px;
+  --ui2-textstyle-header-h1-letter-spacing: -0.04em;
+  --ui2-textstyle-header-h1-line-height: normal;
+  --ui2-textstyle-header-h1-text-transform: none;
+  --ui2-textstyle-header-h2-font-family: "Poppins", sans-serif;
+  --ui2-textstyle-header-h2-font-weight: 700;
+  --ui2-textstyle-header-h2-font-size: 28px;
+  --ui2-textstyle-header-h2-letter-spacing: -0.04em;
+  --ui2-textstyle-header-h2-line-height: normal;
+  --ui2-textstyle-header-h2-text-transform: none;
+  --ui2-textstyle-header-h3-font-family: "Poppins", sans-serif;
+  --ui2-textstyle-header-h3-font-weight: 700;
+  --ui2-textstyle-header-h3-font-size: 22px;
+  --ui2-textstyle-header-h3-letter-spacing: -0.03em;
+  --ui2-textstyle-header-h3-line-height: normal;
+  --ui2-textstyle-header-h3-text-transform: none;
+  --ui2-textstyle-header-h4-font-family: "Poppins", sans-serif;
+  --ui2-textstyle-header-h4-font-weight: 700;
+  --ui2-textstyle-header-h4-font-size: 16px;
+  --ui2-textstyle-header-h4-letter-spacing: -0.02em;
+  --ui2-textstyle-header-h4-line-height: normal;
+  --ui2-textstyle-header-h4-text-transform: none;
+  --ui2-textstyle-header-h5-font-family: "Poppins", sans-serif;
+  --ui2-textstyle-header-h5-font-weight: 700;
+  --ui2-textstyle-header-h5-font-size: 15px;
+  --ui2-textstyle-header-h5-letter-spacing: -0.01em;
+  --ui2-textstyle-header-h5-line-height: normal;
+  --ui2-textstyle-header-h5-text-transform: none;
+  --ui2-textstyle-data-l-medium-font-family: "Poppins", sans-serif;
+  --ui2-textstyle-data-l-medium-font-weight: 600;
+  --ui2-textstyle-data-l-medium-font-size: 28px;
+  --ui2-textstyle-data-l-medium-letter-spacing: -0.04em;
+  --ui2-textstyle-data-l-medium-line-height: normal;
+  --ui2-textstyle-data-l-medium-text-transform: none;
+  --ui2-textstyle-data-m-bold-font-family: "Poppins", sans-serif;
+  --ui2-textstyle-data-m-bold-font-weight: 700;
+  --ui2-textstyle-data-m-bold-font-size: 24px;
+  --ui2-textstyle-data-m-bold-letter-spacing: -0.04em;
+  --ui2-textstyle-data-m-bold-line-height: normal;
+  --ui2-textstyle-data-m-bold-text-transform: none;
+  --ui2-textstyle-data-s-semibold-font-family: "Poppins", sans-serif;
+  --ui2-textstyle-data-s-semibold-font-weight: 600;
+  --ui2-textstyle-data-s-semibold-font-size: 13px;
+  --ui2-textstyle-data-s-semibold-letter-spacing: 0;
+  --ui2-textstyle-data-s-semibold-line-height: normal;
+  --ui2-textstyle-data-s-semibold-text-transform: none;
+  --ui2-textstyle-data-s-medium-font-family: "Poppins", sans-serif;
+  --ui2-textstyle-data-s-medium-font-weight: 500;
+  --ui2-textstyle-data-s-medium-font-size: 13px;
+  --ui2-textstyle-data-s-medium-letter-spacing: 0;
+  --ui2-textstyle-data-s-medium-line-height: normal;
+  --ui2-textstyle-data-s-medium-text-transform: none;
+  --ui2-textstyle-data-s-regular-font-family: "Poppins", sans-serif;
+  --ui2-textstyle-data-s-regular-font-weight: 400;
+  --ui2-textstyle-data-s-regular-font-size: 13px;
+  --ui2-textstyle-data-s-regular-letter-spacing: 0;
+  --ui2-textstyle-data-s-regular-line-height: normal;
+  --ui2-textstyle-data-s-regular-text-transform: none;
+  --ui2-textstyle-data-s-mono-font-family: "IBM Plex Mono", monospace;
+  --ui2-textstyle-data-s-mono-font-weight: 400;
+  --ui2-textstyle-data-s-mono-font-size: 13px;
+  --ui2-textstyle-data-s-mono-letter-spacing: 0;
+  --ui2-textstyle-data-s-mono-line-height: normal;
+  --ui2-textstyle-data-s-mono-text-transform: none;
+  --ui2-textstyle-data-xs-semibold-font-family: "Poppins", sans-serif;
+  --ui2-textstyle-data-xs-semibold-font-weight: 600;
+  --ui2-textstyle-data-xs-semibold-font-size: 12px;
+  --ui2-textstyle-data-xs-semibold-letter-spacing: 0;
+  --ui2-textstyle-data-xs-semibold-line-height: normal;
+  --ui2-textstyle-data-xs-semibold-text-transform: none;
+  --ui2-textstyle-data-xs-medium-font-family: "Poppins", sans-serif;
+  --ui2-textstyle-data-xs-medium-font-weight: 500;
+  --ui2-textstyle-data-xs-medium-font-size: 12px;
+  --ui2-textstyle-data-xs-medium-letter-spacing: 0;
+  --ui2-textstyle-data-xs-medium-line-height: normal;
+  --ui2-textstyle-data-xs-medium-text-transform: none;
+  --ui2-textstyle-data-xs-regular-font-family: "Poppins", sans-serif;
+  --ui2-textstyle-data-xs-regular-font-weight: 400;
+  --ui2-textstyle-data-xs-regular-font-size: 12px;
+  --ui2-textstyle-data-xs-regular-letter-spacing: 0;
+  --ui2-textstyle-data-xs-regular-line-height: normal;
+  --ui2-textstyle-data-xs-regular-text-transform: none;
+  --ui2-textstyle-data-xs-mono-font-family: "IBM Plex Mono", monospace;
+  --ui2-textstyle-data-xs-mono-font-weight: 400;
+  --ui2-textstyle-data-xs-mono-font-size: 11px;
+  --ui2-textstyle-data-xs-mono-letter-spacing: 0;
+  --ui2-textstyle-data-xs-mono-line-height: normal;
+  --ui2-textstyle-data-xs-mono-text-transform: none;
+  --ui2-textstyle-paragraph-regular-font-family: "Poppins", sans-serif;
+  --ui2-textstyle-paragraph-regular-font-weight: 400;
+  --ui2-textstyle-paragraph-regular-font-size: 14px;
+  --ui2-textstyle-paragraph-regular-letter-spacing: 0;
+  --ui2-textstyle-paragraph-regular-line-height: normal;
+  --ui2-textstyle-paragraph-regular-text-transform: none;
+}
+
+.ui2-textstyle-header-h1 {
+  font-family: var(--ui2-textstyle-header-h1-font-family);
+  font-weight: var(--ui2-textstyle-header-h1-font-weight);
+  font-size: var(--ui2-textstyle-header-h1-font-size);
+  letter-spacing: var(--ui2-textstyle-header-h1-letter-spacing);
+  line-height: var(--ui2-textstyle-header-h1-line-height);
+  text-transform: var(--ui2-textstyle-header-h1-text-transform);
+}
+.ui2-textstyle-header-h2 {
+  font-family: var(--ui2-textstyle-header-h2-font-family);
+  font-weight: var(--ui2-textstyle-header-h2-font-weight);
+  font-size: var(--ui2-textstyle-header-h2-font-size);
+  letter-spacing: var(--ui2-textstyle-header-h2-letter-spacing);
+  line-height: var(--ui2-textstyle-header-h2-line-height);
+  text-transform: var(--ui2-textstyle-header-h2-text-transform);
+}
+.ui2-textstyle-header-h3 {
+  font-family: var(--ui2-textstyle-header-h3-font-family);
+  font-weight: var(--ui2-textstyle-header-h3-font-weight);
+  font-size: var(--ui2-textstyle-header-h3-font-size);
+  letter-spacing: var(--ui2-textstyle-header-h3-letter-spacing);
+  line-height: var(--ui2-textstyle-header-h3-line-height);
+  text-transform: var(--ui2-textstyle-header-h3-text-transform);
+}
+.ui2-textstyle-header-h4 {
+  font-family: var(--ui2-textstyle-header-h4-font-family);
+  font-weight: var(--ui2-textstyle-header-h4-font-weight);
+  font-size: var(--ui2-textstyle-header-h4-font-size);
+  letter-spacing: var(--ui2-textstyle-header-h4-letter-spacing);
+  line-height: var(--ui2-textstyle-header-h4-line-height);
+  text-transform: var(--ui2-textstyle-header-h4-text-transform);
+}
+.ui2-textstyle-header-h5 {
+  font-family: var(--ui2-textstyle-header-h5-font-family);
+  font-weight: var(--ui2-textstyle-header-h5-font-weight);
+  font-size: var(--ui2-textstyle-header-h5-font-size);
+  letter-spacing: var(--ui2-textstyle-header-h5-letter-spacing);
+  line-height: var(--ui2-textstyle-header-h5-line-height);
+  text-transform: var(--ui2-textstyle-header-h5-text-transform);
+}
+.ui2-textstyle-data-l-medium {
+  font-family: var(--ui2-textstyle-data-l-medium-font-family);
+  font-weight: var(--ui2-textstyle-data-l-medium-font-weight);
+  font-size: var(--ui2-textstyle-data-l-medium-font-size);
+  letter-spacing: var(--ui2-textstyle-data-l-medium-letter-spacing);
+  line-height: var(--ui2-textstyle-data-l-medium-line-height);
+  text-transform: var(--ui2-textstyle-data-l-medium-text-transform);
+}
+.ui2-textstyle-data-m-bold {
+  font-family: var(--ui2-textstyle-data-m-bold-font-family);
+  font-weight: var(--ui2-textstyle-data-m-bold-font-weight);
+  font-size: var(--ui2-textstyle-data-m-bold-font-size);
+  letter-spacing: var(--ui2-textstyle-data-m-bold-letter-spacing);
+  line-height: var(--ui2-textstyle-data-m-bold-line-height);
+  text-transform: var(--ui2-textstyle-data-m-bold-text-transform);
+}
+.ui2-textstyle-data-s-semibold {
+  font-family: var(--ui2-textstyle-data-s-semibold-font-family);
+  font-weight: var(--ui2-textstyle-data-s-semibold-font-weight);
+  font-size: var(--ui2-textstyle-data-s-semibold-font-size);
+  letter-spacing: var(--ui2-textstyle-data-s-semibold-letter-spacing);
+  line-height: var(--ui2-textstyle-data-s-semibold-line-height);
+  text-transform: var(--ui2-textstyle-data-s-semibold-text-transform);
+}
+.ui2-textstyle-data-s-medium {
+  font-family: var(--ui2-textstyle-data-s-medium-font-family);
+  font-weight: var(--ui2-textstyle-data-s-medium-font-weight);
+  font-size: var(--ui2-textstyle-data-s-medium-font-size);
+  letter-spacing: var(--ui2-textstyle-data-s-medium-letter-spacing);
+  line-height: var(--ui2-textstyle-data-s-medium-line-height);
+  text-transform: var(--ui2-textstyle-data-s-medium-text-transform);
+}
+.ui2-textstyle-data-s-regular {
+  font-family: var(--ui2-textstyle-data-s-regular-font-family);
+  font-weight: var(--ui2-textstyle-data-s-regular-font-weight);
+  font-size: var(--ui2-textstyle-data-s-regular-font-size);
+  letter-spacing: var(--ui2-textstyle-data-s-regular-letter-spacing);
+  line-height: var(--ui2-textstyle-data-s-regular-line-height);
+  text-transform: var(--ui2-textstyle-data-s-regular-text-transform);
+}
+.ui2-textstyle-data-s-mono {
+  font-family: var(--ui2-textstyle-data-s-mono-font-family);
+  font-weight: var(--ui2-textstyle-data-s-mono-font-weight);
+  font-size: var(--ui2-textstyle-data-s-mono-font-size);
+  letter-spacing: var(--ui2-textstyle-data-s-mono-letter-spacing);
+  line-height: var(--ui2-textstyle-data-s-mono-line-height);
+  text-transform: var(--ui2-textstyle-data-s-mono-text-transform);
+}
+.ui2-textstyle-data-xs-semibold {
+  font-family: var(--ui2-textstyle-data-xs-semibold-font-family);
+  font-weight: var(--ui2-textstyle-data-xs-semibold-font-weight);
+  font-size: var(--ui2-textstyle-data-xs-semibold-font-size);
+  letter-spacing: var(--ui2-textstyle-data-xs-semibold-letter-spacing);
+  line-height: var(--ui2-textstyle-data-xs-semibold-line-height);
+  text-transform: var(--ui2-textstyle-data-xs-semibold-text-transform);
+}
+.ui2-textstyle-data-xs-medium {
+  font-family: var(--ui2-textstyle-data-xs-medium-font-family);
+  font-weight: var(--ui2-textstyle-data-xs-medium-font-weight);
+  font-size: var(--ui2-textstyle-data-xs-medium-font-size);
+  letter-spacing: var(--ui2-textstyle-data-xs-medium-letter-spacing);
+  line-height: var(--ui2-textstyle-data-xs-medium-line-height);
+  text-transform: var(--ui2-textstyle-data-xs-medium-text-transform);
+}
+.ui2-textstyle-data-xs-regular {
+  font-family: var(--ui2-textstyle-data-xs-regular-font-family);
+  font-weight: var(--ui2-textstyle-data-xs-regular-font-weight);
+  font-size: var(--ui2-textstyle-data-xs-regular-font-size);
+  letter-spacing: var(--ui2-textstyle-data-xs-regular-letter-spacing);
+  line-height: var(--ui2-textstyle-data-xs-regular-line-height);
+  text-transform: var(--ui2-textstyle-data-xs-regular-text-transform);
+}
+.ui2-textstyle-data-xs-mono {
+  font-family: var(--ui2-textstyle-data-xs-mono-font-family);
+  font-weight: var(--ui2-textstyle-data-xs-mono-font-weight);
+  font-size: var(--ui2-textstyle-data-xs-mono-font-size);
+  letter-spacing: var(--ui2-textstyle-data-xs-mono-letter-spacing);
+  line-height: var(--ui2-textstyle-data-xs-mono-line-height);
+  text-transform: var(--ui2-textstyle-data-xs-mono-text-transform);
+}
+.ui2-textstyle-paragraph-regular {
+  font-family: var(--ui2-textstyle-paragraph-regular-font-family);
+  font-weight: var(--ui2-textstyle-paragraph-regular-font-weight);
+  font-size: var(--ui2-textstyle-paragraph-regular-font-size);
+  letter-spacing: var(--ui2-textstyle-paragraph-regular-letter-spacing);
+  line-height: var(--ui2-textstyle-paragraph-regular-line-height);
+  text-transform: var(--ui2-textstyle-paragraph-regular-text-transform);
+}
