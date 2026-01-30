@@ -7,7 +7,7 @@ In your app `package.json`:
 ```json
 {
   "dependencies": {
-    "ui2-sdk": "git+ssh://git@github.com:ORG/REPO.git#path:/package"
+    "ui2-sdk": "git+https://github.com/mlnvandal/ui2-sdk.git"
   }
 }
 ```
@@ -22,8 +22,8 @@ import "ui2-sdk/dist/style.css";
 ```bash
 npm run build:package
 ```
-This creates `package/dist` with compiled assets and syncs the version from the root `package.json`.
+This creates `dist` with compiled assets.
 
 ## Notes
+- This repository stores built assets in `dist/`.
 - `react` and `react-dom` are peer dependencies.
-- Only `package/` should be used for git dependency installs.
