@@ -1,0 +1,65 @@
+import type { CSSProperties, ReactNode } from "react";
+import { DataTableSorting } from "./DataTableContext";
+export type DataTableColumn<T> = {
+    key: string;
+    header: ReactNode;
+    tooltip?: string;
+    minWidth?: number;
+    maxWidth?: number;
+    align?: "start" | "end" | "center";
+    monospace?: boolean;
+    sortable?: boolean;
+    resizable?: boolean;
+    frozenStart?: boolean;
+    frozenEnd?: boolean;
+    filterKey?: string;
+    value?: keyof T | ((row: T) => unknown);
+    valueFormatter?: (value: unknown, row: T) => string | number;
+    render?: (row: T) => ReactNode;
+    sortFn?: (a: T, b: T, sortOrder: "asc" | "desc") => number;
+};
+export type DataTableProps<T> = {
+    columns: DataTableColumn<T>[];
+    rows: T[];
+    rowKey?: keyof T | ((row: T) => string | number);
+    size?: "m" | "l";
+    rowHover?: boolean;
+    rowDividers?: boolean;
+    sorting?: DataTableSorting;
+    defaultSorting?: DataTableSorting;
+    onSortingChange?: (sorting: DataTableSorting) => void;
+    columnWidths?: Record<string, number>;
+    onColumnResize?: (payload: {
+        key: string;
+        width: number;
+    }) => void;
+    columnsResizing?: boolean;
+    columnsReordering?: boolean;
+    columnsPinControl?: boolean;
+    columnsVisibilityControl?: boolean;
+    filterKeys?: string[];
+    onFilterByColumn?: (payload: {
+        columnKey: string;
+        filterKey: string;
+    }) => void;
+    onFilterByValue?: (payload: {
+        columnKey: string;
+        filterKey: string;
+        value: unknown;
+    }) => void;
+    visibleColumns?: string[];
+    defaultVisibleColumns?: string[];
+    onVisibleColumnsChange?: (keys: string[]) => void;
+    columnsOrder?: string[];
+    defaultColumnsOrder?: string[];
+    onColumnsOrderChange?: (order: string[]) => void;
+    pinnedColumnsStart?: string[];
+    defaultPinnedColumnsStart?: string[];
+    onPinnedColumnsStartChange?: (keys: string[]) => void;
+    pinnedColumnsEnd?: string[];
+    defaultPinnedColumnsEnd?: string[];
+    onPinnedColumnsEndChange?: (keys: string[]) => void;
+    className?: string;
+    style?: CSSProperties;
+};
+export declare function DataTable<T>({ columns, rows, rowKey, size, rowHover, rowDividers, sorting, defaultSorting, onSortingChange, columnWidths: columnWidthsProp, onColumnResize, columnsResizing, columnsReordering, columnsPinControl, columnsVisibilityControl, filterKeys, onFilterByColumn, onFilterByValue, visibleColumns, defaultVisibleColumns, onVisibleColumnsChange, columnsOrder, defaultColumnsOrder, onColumnsOrderChange, pinnedColumnsStart, defaultPinnedColumnsStart, onPinnedColumnsStartChange, pinnedColumnsEnd, defaultPinnedColumnsEnd, onPinnedColumnsEndChange, className, style, }: DataTableProps<T>): import("react/jsx-runtime").JSX.Element;
