@@ -8,6 +8,14 @@ export type { DataTableProps, DataTableColumn } from "./components/Table/DataTab
 export type { DataTableSorting } from "./components/Table/DataTableContext";
 export { DataTableCompat } from "./components/Table/DataTableCompat";
 export type { DataTableCompatProps, DataTableCompatColumn } from "./components/Table/DataTableCompat";
+export { StatusBadge } from "./components/Table/StatusBadge";
+export type { StatusBadgeProps } from "./components/Table/StatusBadge";
+export { ClusterBadge } from "./components/Table/ClusterBadge";
+export type { ClusterBadgeProps } from "./components/Table/ClusterBadge";
+export { ProgressBar } from "./components/Table/ProgressBar";
+export type { ProgressBarProps } from "./components/Table/ProgressBar";
+export { KPICard } from "./components/KPI/KPICard";
+export type { KPICardProps, KPICardData } from "./components/KPI/KPICard";
 export { Sidebar } from "./components/Sidebar/Sidebar";
 export type { SidebarAccount, SidebarFooter, SidebarPinnedAction, SidebarNavChild, SidebarNavItem, SidebarProps, } from "./components/Sidebar/Sidebar";
 export { SidebarAccountButton, SidebarChildButton, SidebarFooterSection, SidebarHeader, SidebarHeaderButton, SidebarNavButton, SidebarShell, } from "./components/Sidebar/SidebarAtoms";
