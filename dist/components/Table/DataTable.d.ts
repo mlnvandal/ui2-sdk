@@ -24,6 +24,9 @@ export type DataTableProps<T> = {
     rowKey?: keyof T | ((row: T) => string | number);
     size?: "m" | "l";
     rowHover?: boolean;
+    rowClickable?: boolean;
+    rowActiveKey?: string | number | null;
+    onRowClick?: (row: T) => void;
     rowDividers?: boolean;
     sorting?: DataTableSorting;
     defaultSorting?: DataTableSorting;
@@ -62,4 +65,4 @@ export type DataTableProps<T> = {
     className?: string;
     style?: CSSProperties;
 };
-export declare function DataTable<T>({ columns, rows, rowKey, size, rowHover, rowDividers, sorting, defaultSorting, onSortingChange, columnWidths: columnWidthsProp, onColumnResize, columnsResizing, columnsReordering, columnsPinControl, columnsVisibilityControl, filterKeys, onFilterByColumn, onFilterByValue, visibleColumns, defaultVisibleColumns, onVisibleColumnsChange, columnsOrder, defaultColumnsOrder, onColumnsOrderChange, pinnedColumnsStart, defaultPinnedColumnsStart, onPinnedColumnsStartChange, pinnedColumnsEnd, defaultPinnedColumnsEnd, onPinnedColumnsEndChange, className, style, }: DataTableProps<T>): import("react/jsx-runtime").JSX.Element;
+export declare function DataTable<T>({ columns, rows, rowKey, size, rowHover, rowClickable, rowActiveKey, onRowClick, rowDividers, sorting, defaultSorting, onSortingChange, columnWidths: columnWidthsProp, onColumnResize, columnsResizing, columnsReordering, columnsPinControl, columnsVisibilityControl, filterKeys, onFilterByColumn, onFilterByValue, visibleColumns, defaultVisibleColumns, onVisibleColumnsChange, columnsOrder, defaultColumnsOrder, onColumnsOrderChange, pinnedColumnsStart, defaultPinnedColumnsStart, onPinnedColumnsStartChange, pinnedColumnsEnd, defaultPinnedColumnsEnd, onPinnedColumnsEndChange, className, style, }: DataTableProps<T>): import("react/jsx-runtime").JSX.Element;
