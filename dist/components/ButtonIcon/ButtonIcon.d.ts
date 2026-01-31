@@ -1,6 +1,6 @@
 import type { ButtonHTMLAttributes, ReactNode } from "react";
 export type ButtonIconSize = "xs" | "s" | "m" | "l";
-export type ButtonIconVariant = "primary" | "secondary" | "tertiary" | "inverted";
+export type ButtonIconVariant = "primary" | "secondary" | "tertiary" | "inverted" | "destructive" | "ghost" | "link" | "outline" | "default";
 export type ButtonIconProps = {
     children: ReactNode;
     size?: ButtonIconSize;

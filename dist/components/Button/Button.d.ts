@@ -1,8 +1,9 @@
 import type { ComponentPropsWithoutRef, ElementType, ReactNode } from "react";
-export type ButtonVariant = "primary" | "secondary" | "tertiary";
-export type ButtonSize = "m" | "l";
+export type ButtonVariant = "primary" | "secondary" | "tertiary" | "destructive" | "ghost" | "link" | "outline" | "default";
+export type ButtonSize = "m" | "l" | "sm" | "lg" | "default" | "icon";
 export type ButtonProps<T extends ElementType = "button"> = {
     as?: T;
+    asChild?: boolean;
     active?: boolean;
     block?: boolean;
     disabled?: boolean;
@@ -15,4 +16,4 @@ export type ButtonProps<T extends ElementType = "button"> = {
     className?: string;
     children?: ReactNode;
 } & Omit<ComponentPropsWithoutRef<T>, "as" | "disabled">;
-export declare function Button<T extends ElementType = "button">({ as, active, block, disabled, size, variant, icon, textColor, leadingVisual, trailingVisual, className, children, ...rest }: ButtonProps<T>): import("react/jsx-runtime").JSX.Element;
+export declare const Button: import("react").ForwardRefExoticComponent<Omit<ButtonProps<ElementType>, "ref"> & import("react").RefAttributes<HTMLElement>>;

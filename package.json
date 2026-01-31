@@ -1,6 +1,6 @@
 {
   "name": "ui2-sdk",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
@@ -19,6 +19,7 @@
     "**/*.css"
   ],
   "dependencies": {
+    "@radix-ui/react-slot": "^1.1.0",
     "@tabler/icons-react": "^3.36.1",
     "clsx": "^2.1.1"
   },
