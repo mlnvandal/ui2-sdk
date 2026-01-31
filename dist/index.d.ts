@@ -11,3 +11,7 @@ export type { SidebarAccount, SidebarFooter, SidebarPinnedAction, SidebarNavChil
 export { SidebarAccountButton, SidebarChildButton, SidebarFooterSection, SidebarHeader, SidebarHeaderButton, SidebarNavButton, SidebarShell, } from "./components/Sidebar/SidebarAtoms";
 export { SidebarFooter as SidebarFooterPart, SidebarIconButton, SidebarItem, SidebarNav, SidebarPopover, SidebarPinnedButtons, SidebarProfile, } from "./components/Sidebar/SidebarParts";
 export type { SidebarFooterProps, SidebarIconButtonProps, SidebarItemProps, SidebarPopoverProps, SidebarPinnedButtonsProps, SidebarProfileProps, } from "./components/Sidebar/SidebarParts";
+import "./styles/ui2-primitives.css";
+import "./styles/ui2-shades.css";
+import "./styles/ui2-variables.css";
+import "./styles/ui2-typography.css";
