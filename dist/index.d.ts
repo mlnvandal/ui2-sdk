@@ -32,6 +32,8 @@ export { CardListCompat } from "./components/Card/CardListCompat";
 export type { CardListCompatProps, CardListGroup, CardListItem, CardListMetric, CardListSizePoint, } from "./components/Card/CardListCompat";
 export { Sidebar } from "./components/Sidebar/Sidebar";
 export type { SidebarAccount, SidebarFooter, SidebarPinnedAction, SidebarNavChild, SidebarNavItem, SidebarProps, } from "./components/Sidebar/Sidebar";
+export { SidebarCompat } from "./components/Sidebar/SidebarCompat";
+export type { SidebarCompatAccount, SidebarCompatMenuBlock, SidebarCompatMenuGroup, SidebarCompatMenuItem, SidebarCompatProps, } from "./components/Sidebar/SidebarCompat";
 export { SidebarAccountButton, SidebarChildButton, SidebarFooterSection, SidebarHeader, SidebarHeaderButton, SidebarNavButton, SidebarShell, } from "./components/Sidebar/SidebarAtoms";
 export { SidebarFooter as SidebarFooterPart, SidebarIconButton, SidebarItem, SidebarNav, SidebarPopover, SidebarPinnedButtons, SidebarProfile, } from "./components/Sidebar/SidebarParts";
 export type { SidebarFooterProps, SidebarIconButtonProps, SidebarItemProps, SidebarPopoverProps, SidebarPinnedButtonsProps, SidebarProfileProps, } from "./components/Sidebar/SidebarParts";
